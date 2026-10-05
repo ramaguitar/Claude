@@ -35,6 +35,19 @@ def test_mensaje_conserva_acentos_y_adjunta_cv(base):
     assert adjuntos[0].get_content() == b"%PDF-1.4 contenido-cv"
 
 
+def test_mensaje_incluye_html_con_parrafos_que_fluyen(base):
+    # sin versión HTML, Gmail envía el texto plano cortado a ~70 caracteres por línea
+    largo = "Je connais l'hôtellerie de l'intérieur. " * 6 + "Fin & <ok>."
+    mail = {**un_mail(), "cuerpo": "Madame, Monsieur,\n\n" + largo + "\n\n" + FIRMA}
+    msg = construir_mensaje(mail, "Ramiro Guitar <ramiroguitar28@gmail.com>", base, "2026-10-06")
+    vuelta = email.message_from_bytes(msg.as_bytes(), policy=policy.default)
+    html = vuelta.get_body(("html",)).get_content()
+    assert "<p>" + largo.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;") + "</p>" in html
+    assert "Ramiro Guitar<br>+33 7 45 23 48 84<br>ramiroguitar28@gmail.com" in html
+    assert largo in vuelta.get_body(("plain",)).get_content()
+    assert len(list(vuelta.iter_attachments())) == 1
+
+
 def test_message_id_deterministico():
     assert message_id("2026-10-06", "a@b.ch") == message_id("2026-10-06", "a@b.ch")
     assert message_id("2026-10-06", "a@b.ch") != message_id("2026-10-06", "c@b.ch")
