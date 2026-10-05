@@ -51,7 +51,9 @@ ahí aparecen las vacantes concretas.
      > general (`info@`, `contact@`, `hello@`, `reception@`) > reservas.
    - Usá solo un mail que figure en la web oficial del lugar o en el aviso de empleo. **Nunca adivines un mail.**
 2. Si el email o el dominio ya figura en `contactados.csv`, salteá el lugar. Los proveedores genéricos
-   (`orange.fr`, `bluewin.ch`, `andorra.ad`, `gmail.com`, etc.) cuentan solo por email exacto.
+   (`orange.fr`, `bluewin.ch`, `andorra.ad`, `gmail.com`, `verbier.ch`, etc.) cuentan solo por email exacto.
+   Si descubrís otro dominio de estación que alojan varios negocios distintos (como `verbier.ch`),
+   anotalo en el resumen para agregarlo a `DOMINIOS_GENERICOS` en `candidaturas/registro.py`.
 3. Si solo hay formulario web, no lo completes: anotá el lugar y el link en «Postular a mano».
 4. Fijate si el lugar o la estación publican vacantes para el invierno 2026/27.
 

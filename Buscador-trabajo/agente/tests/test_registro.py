@@ -79,3 +79,9 @@ def test_cli_registrar_enviados(tmp_path, capsys):
     rc = registrar_enviados.main([str(entrada), "--registro", str(tmp_path / "c.csv")])
     assert rc == 0
     assert json.loads(capsys.readouterr().out) == {"importados": 1, "recibidos": 1}
+
+
+def test_dominio_de_la_estacion_compartido_por_varios_negocios(tmp_path):
+    reg = Registro(tmp_path / "c.csv")
+    reg.agregar({"email": "mirabeau@verbier.ch"})
+    assert reg.motivo_contactado("otrohotel@verbier.ch") is None

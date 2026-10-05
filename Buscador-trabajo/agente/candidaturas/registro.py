@@ -12,6 +12,8 @@ DOMINIOS_GENERICOS = frozenset({
     "icloud.com", "me.com", "orange.fr", "wanadoo.fr", "free.fr", "sfr.fr", "laposte.net",
     "bluewin.ch", "gmx.ch", "gmx.de", "gmx.net", "gmx.at", "web.de", "libero.it", "tiscali.it",
     "virgilio.it", "alice.it", "andorra.ad", "protonmail.com", "proton.me",
+    # dominios de estación que alojan el correo de varios negocios del pueblo
+    "verbier.ch",
 })
 
 
