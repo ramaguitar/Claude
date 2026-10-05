@@ -5,6 +5,11 @@ import registrar_enviados
 from candidaturas.registro import Registro, dominio, importar_enviados, normalizar_email
 
 
+def leer_filas(ruta):
+    with ruta.open(encoding="utf-8-sig", newline="") as f:
+        return list(csv.DictReader(f))
+
+
 def test_normaliza_mayusculas_y_espacios():
     assert normalizar_email("  Info@Hotel-Alpin.CH ") == "info@hotel-alpin.ch"
     assert dominio("Jobs@Hotel-Alpin.ch") == "hotel-alpin.ch"
@@ -20,7 +25,7 @@ def test_agregar_crea_csv_con_encabezado_y_recuerda(tmp_path):
     reg = Registro(ruta)
     reg.agregar({"fecha": "2026-10-06", "lugar": "Hotel Alpin", "email": "Info@Hotel-Alpin.ch", "estado": "borrador"})
     assert "email ya contactado" in reg.motivo_contactado("info@hotel-alpin.ch")
-    filas = list(csv.DictReader(ruta.open(encoding="utf-8-sig", newline="")))
+    filas = leer_filas(ruta)
     assert filas[0]["email"] == "info@hotel-alpin.ch"
     assert filas[0]["dominio"] == "hotel-alpin.ch"
     # una instancia nueva lee lo persistido
@@ -50,7 +55,7 @@ def test_conserva_columnas_agregadas_por_el_usuario(tmp_path):
         w.writerow(["2026-09-24", "info@capra.ch", "enviado_manual", "rechazo"])
     reg = Registro(ruta)
     reg.agregar({"fecha": "2026-10-06", "email": "info@lagorge.ch", "estado": "borrador"})
-    filas = list(csv.DictReader(ruta.open(encoding="utf-8-sig", newline="")))
+    filas = leer_filas(ruta)
     assert list(filas[0].keys()) == ["fecha", "email", "estado", "respuesta"]
     assert filas[0]["respuesta"] == "rechazo"
     assert filas[1]["email"] == "info@lagorge.ch" and filas[1]["respuesta"] == ""
