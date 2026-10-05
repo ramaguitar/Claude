@@ -31,14 +31,29 @@ class Registro:
         self.emails: set[str] = set()
         self.dominios: set[str] = set()
         self.columnas = list(COLUMNAS)
+        self.delimitador = ","
         if self.ruta.exists() and self.ruta.stat().st_size > 0:
             with self.ruta.open(encoding="utf-8-sig", newline="") as f:
-                lector = csv.DictReader(f)
+                encabezado = f.readline()
+                # Excel en configuración regional española guarda el CSV con «;»
+                if encabezado.count(";") > encabezado.count(","):
+                    self.delimitador = ";"
+                f.seek(0)
+                lector = csv.DictReader(f, delimiter=self.delimitador)
                 if lector.fieldnames:
                     self.columnas = list(lector.fieldnames)
+                if "email" not in self.columnas:
+                    raise ValueError(f"{self.ruta} no tiene la columna 'email': sin ella no se puede deduplicar")
                 for fila in lector:
                     if fila.get("email"):
                         self._recordar(fila["email"])
+
+    @staticmethod
+    def verificar_escritura(ruta: Path) -> None:
+        """Lanza OSError si el registro no se puede escribir (por ejemplo, abierto en Excel)."""
+        Path(ruta).parent.mkdir(parents=True, exist_ok=True)
+        with Path(ruta).open("a", encoding="utf-8"):
+            pass
 
     def _recordar(self, email: str) -> None:
         e = normalizar_email(email)
@@ -65,7 +80,8 @@ class Registro:
         self.ruta.parent.mkdir(parents=True, exist_ok=True)
         # utf-8-sig solo al crear: deja el BOM al inicio para que Excel lea bien los acentos
         with self.ruta.open("a", encoding="utf-8-sig" if nuevo else "utf-8", newline="") as f:
-            w = csv.DictWriter(f, fieldnames=self.columnas, extrasaction="ignore", restval="")
+            w = csv.DictWriter(f, fieldnames=self.columnas, extrasaction="ignore", restval="",
+                               delimiter=self.delimitador)
             if nuevo:
                 w.writeheader()
             w.writerow(fila)

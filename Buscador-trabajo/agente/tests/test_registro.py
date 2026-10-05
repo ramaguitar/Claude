@@ -85,3 +85,35 @@ def test_dominio_de_la_estacion_compartido_por_varios_negocios(tmp_path):
     reg = Registro(tmp_path / "c.csv")
     reg.agregar({"email": "mirabeau@verbier.ch"})
     assert reg.motivo_contactado("otrohotel@verbier.ch") is None
+
+
+def test_csv_guardado_por_excel_con_punto_y_coma(tmp_path):
+    ruta = tmp_path / "c.csv"
+    ruta.write_text("fecha;email;estado;respuesta\n2026-09-24;info@capra.ch;enviado_manual;rechazo\n", encoding="utf-8-sig")
+    reg = Registro(ruta)
+    assert reg.motivo_contactado("info@capra.ch") is not None
+    reg.agregar({"fecha": "2026-10-06", "email": "info@lagorge.ch", "estado": "borrador"})
+    lineas = ruta.read_text(encoding="utf-8-sig").splitlines()
+    assert lineas[-1] == "2026-10-06;info@lagorge.ch;borrador;"
+
+
+def test_csv_sin_columna_email_falla_en_voz_alta(tmp_path):
+    ruta = tmp_path / "c.csv"
+    ruta.write_text("fecha,correo\n2026-09-24,info@capra.ch\n", encoding="utf-8")
+    try:
+        Registro(ruta)
+    except ValueError as e:
+        assert "email" in str(e)
+    else:
+        raise AssertionError("debió fallar")
+
+
+def test_verificar_escritura_detecta_archivo_no_escribible(tmp_path):
+    ruta = tmp_path / "contactados.csv"
+    ruta.mkdir()  # simula un archivo bloqueado/no escribible
+    try:
+        Registro.verificar_escritura(ruta)
+    except OSError:
+        pass
+    else:
+        raise AssertionError("debió fallar")

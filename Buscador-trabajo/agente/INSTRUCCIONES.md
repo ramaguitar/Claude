@@ -83,6 +83,9 @@ Buscá la ruta en `cvs.json[puesto][idioma]`. Si no existe, traducilo (paso 6).
    - Housekeeping: `../CVs/Housekeeping/CV-RamiroGuitar-<IT|CA|...>.pdf`.
    - Resto: `../CVs/<Puesto>/<Alemán|Italiano|Catalán>/CV-RamiroGuitar.pdf`.
 4. `uv run python cv.py render cv/contenidos/<Puesto>.<idioma>.json <ruta destino>`
+   - El comando se niega a pisar un PDF que ya existe. Nunca uses `--force` sobre los CVs originales de Ramiro;
+     solo sobre un CV que vos mismo generaste en esta corrida y estás corrigiendo.
+   - Si `ok` es `false`, el PDF no queda guardado; solo queda la vista previa.
 5. Abrí con Read el PNG que indica la salida (`cv/previas/<Puesto>-<idioma>.png`).
    - Si algo se corta, se superpone o `ok` es `false`, acortá frases manteniendo el sentido y repetí.
    - Máximo 3 intentos. Si sigue sin quedar bien, usá Housekeeping del idioma y anotalo.
@@ -118,9 +121,13 @@ Escribí `lotes/AAAA-MM-DD.json`: una lista de objetos con estos campos:
 ```
 
 - `cv` es la ruta relativa a `Buscador-trabajo/`, tal como figura en `cvs.json`.
+- `cv` tiene que ser **exactamente** una de las rutas de `cvs.json`: cualquier otro PDF se rechaza.
 - Ejecutá `uv run python crear_borradores.py lotes/AAAA-MM-DD.json` y leé el JSON de salida:
   - Si hay `salteados`, no reintentes esos lugares hoy.
-  - Si hay `errores` de conexión, reintentá el mismo comando una vez; los ya creados se saltean solos.
+  - Código de salida 1 («No se pudo conectar» o «Gmail cortó»): reintentá el mismo comando **una vez**;
+    los ya creados se saltean solos.
+  - Código de salida 2 (credenciales o `contactados.csv` bloqueado): no reintentes; ponelo en el resumen.
+  - Código de salida 3 («NO re-ejecutes»): **no reintentes**; ponelo primero en el resumen con el email afectado.
 
 ## 9. Cierre
 1. Actualizá `zonas.json`.

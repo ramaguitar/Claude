@@ -121,4 +121,7 @@ def renderizar(contenido: dict, foto: Path, salida: Path, png: Path | None = Non
             break
     png = Path(png) if png else Path(salida).with_suffix(".png")
     previsualizar(salida, png)
+    if n != 1:
+        # un CV de varias páginas no debe quedar disponible para adjuntarse; la vista previa sí queda
+        Path(salida).unlink(missing_ok=True)
     return {"pdf": str(salida), "png": str(png), "escala": escala, "paginas": n, "ok": n == 1}

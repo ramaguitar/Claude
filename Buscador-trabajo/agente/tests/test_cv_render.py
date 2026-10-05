@@ -1,4 +1,5 @@
 import json
+from pathlib import Path
 
 import pymupdf
 import pytest
@@ -69,10 +70,12 @@ def test_reduce_escala_hasta_que_entra_en_una_pagina(monkeypatch, foto, tmp_path
     assert "--escala: 0.94" in escalas[-1]
 
 
-def test_si_nunca_entra_reporta_ok_false(monkeypatch, foto, tmp_path):
+def test_si_nunca_entra_reporta_ok_false_y_no_deja_el_pdf(monkeypatch, foto, tmp_path):
     _simular(monkeypatch, [2] * len(cv_render.ESCALAS))
+    monkeypatch.setattr(cv_render, "html_a_pdf", lambda html_txt, salida, navegador=None: Path(salida).write_bytes(b"%PDF"))
     r = cv_render.renderizar(CONTENIDO, foto, tmp_path / "cv.pdf")
     assert r["ok"] is False and r["escala"] == cv_render.ESCALAS[-1] and r["paginas"] == 2
+    assert not (tmp_path / "cv.pdf").exists()
 
 
 def _hay_navegador():
@@ -92,14 +95,31 @@ def test_render_real_genera_pdf_de_una_pagina(foto, tmp_path):
     assert (tmp_path / "salida" / "CV.png").is_file()
 
 
-def test_cli_registrar_actualiza_catalogo(tmp_path, capsys):
+def test_cli_registrar_actualiza_catalogo(tmp_path, capsys, hacer_pdf):
     base = tmp_path / "base"
-    pdf = base / "CVs" / "Barman" / "Alemán" / "CV-RamiroGuitar.pdf"
-    pdf.parent.mkdir(parents=True)
-    pdf.write_bytes(b"%PDF-1.4")
+    pdf = hacer_pdf(base / "CVs" / "Barman" / "Alemán" / "CV-RamiroGuitar.pdf")
     catalogo = tmp_path / "cvs.json"
     catalogo.write_text(json.dumps({"Barman": {"fr": "CVs/Barman/CV-RamiroGuitar.pdf"}}), encoding="utf-8")
     rc = cv.main(["--catalogo", str(catalogo), "--base", str(base), "registrar", "Barman", "de", str(pdf)])
     assert rc == 0
     assert json.loads(catalogo.read_text(encoding="utf-8"))["Barman"] == {
         "fr": "CVs/Barman/CV-RamiroGuitar.pdf", "de": "CVs/Barman/Alemán/CV-RamiroGuitar.pdf"}
+
+
+def test_cli_registrar_rechaza_cv_de_varias_paginas(tmp_path, capsys, hacer_pdf):
+    base = tmp_path / "base"
+    pdf = hacer_pdf(base / "CVs" / "Barman" / "Alemán" / "CV-RamiroGuitar.pdf", paginas=2)
+    catalogo = tmp_path / "cvs.json"
+    catalogo.write_text("{}", encoding="utf-8")
+    rc = cv.main(["--catalogo", str(catalogo), "--base", str(base), "registrar", "Barman", "de", str(pdf)])
+    assert rc == 1 and json.loads(catalogo.read_text(encoding="utf-8")) == {}
+
+
+def test_cli_render_no_pisa_un_cv_existente(tmp_path, capsys, foto, monkeypatch):
+    original = tmp_path / "CV-RamiroGuitar-FR.pdf"
+    original.write_bytes(b"%PDF original")
+    contenido = tmp_path / "c.json"
+    contenido.write_text(json.dumps(CONTENIDO), encoding="utf-8")
+    monkeypatch.setattr(cv, "renderizar", lambda *a, **k: (_ for _ in ()).throw(AssertionError("no debe renderizar")))
+    rc = cv.main(["--foto", str(foto), "render", str(contenido), str(original)])
+    assert rc == 1 and original.read_bytes() == b"%PDF original"

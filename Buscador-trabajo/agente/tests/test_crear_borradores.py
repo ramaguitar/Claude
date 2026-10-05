@@ -36,10 +36,11 @@ def sin_credenciales_del_sistema(monkeypatch):
 
 
 @pytest.fixture
-def entorno(tmp_path):
+def entorno(tmp_path, hacer_pdf):
     base = tmp_path / "base"
-    (base / "CVs").mkdir(parents=True)
-    (base / "CVs" / "cv.pdf").write_bytes(b"%PDF-1.4 prueba")
+    hacer_pdf(base / "CVs" / "cv.pdf")
+    catalogo = tmp_path / "cvs.json"
+    catalogo.write_text(json.dumps({"Housekeeping": {"de": "CVs/cv.pdf"}}), encoding="utf-8")
     mails = [{"zona": "Zermatt", "lugar": f"Hotel {i}", "tipo": "hotel", "web": f"https://hotel{i}.ch",
               "email": f"info@hotel{i}.ch", "idioma": "de", "puesto": "Housekeeping", "cv": "CVs/cv.pdf",
               "vacante_url": None, "cv_nuevo": False, "asunto": "Bewerbung für die Wintersaison 2026/27",
@@ -49,7 +50,8 @@ def entorno(tmp_path):
     env = tmp_path / ".env"
     env.write_text("GMAIL_USER=ramiroguitar28@gmail.com\nGMAIL_APP_PASSWORD=clave-de-prueba\n", encoding="utf-8")
     registro = tmp_path / "contactados.csv"
-    args = [str(lote), "--base", str(base), "--registro", str(registro), "--env", str(env)]
+    args = [str(lote), "--base", str(base), "--registro", str(registro), "--env", str(env),
+            "--catalogo", str(catalogo)]
     return args, registro, env
 
 
@@ -110,3 +112,27 @@ def test_ningun_archivo_tiene_codigo_de_envio():
         texto = py.read_text(encoding="utf-8")
         for prohibido in ("smtplib", "send_message", "sendmail"):
             assert prohibido not in texto, f"{py.name} contiene {prohibido}"
+
+
+def test_registro_bloqueado_aborta_antes_de_tocar_gmail(entorno, capsys):
+    args, registro, _ = entorno
+    registro.mkdir()  # como si estuviera abierto en Excel: no se puede escribir
+
+    def no_conectar(u, p):
+        raise AssertionError("no debe conectar si no puede registrar")
+
+    rc, salida = correr(args, capsys, no_conectar)
+    assert rc == 2 and "contactados.csv" in salida["errores"][0]
+
+
+def test_fallo_al_registrar_tras_crear_borrador_pide_no_reintentar(entorno, capsys, monkeypatch):
+    args, _, _ = entorno
+
+    def agregar_roto(self, fila):
+        raise PermissionError("archivo bloqueado")
+
+    monkeypatch.setattr(crear_borradores.Registro, "agregar", agregar_roto)
+    fake = FakeIMAP()
+    rc, salida = correr(args, capsys, lambda u, p: fake)
+    assert rc == 3 and len(fake.appends) == 1
+    assert "NO re-ejecutes" in salida["errores"][0] and "info@hotel0.ch" in salida["errores"][0]
