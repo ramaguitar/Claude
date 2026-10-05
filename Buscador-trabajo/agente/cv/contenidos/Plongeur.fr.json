@@ -1,0 +1,87 @@
+{
+  "plantilla": "especifico",
+  "puesto": "Plongeur",
+  "idioma": "fr",
+  "nombre": "RAMIRO GUITAR",
+  "titular": "Plongeur  |  Plonge et nettoyage de cuisine  |  Hygiène HACCP",
+  "contacto": "Téléphone : +33 7 45 23 48 84  |  E-mail : ramiroguitar28@gmail.com  |  Citoyenneté européenne",
+  "secciones": [
+    {
+      "titulo": "PROFIL PROFESSIONNEL",
+      "tipo": "parrafo",
+      "texto": "Plongeur à l'Hôtel Abelux, à Majorque, le temps d'une saison d'été : lavage de la vaisselle, de la verrerie et de la batterie de cuisine, utilisation du lave-vaisselle professionnel, nettoyage et désinfection du poste de plonge selon les normes HACCP. Ensuite, un an en salle et en caisse dans un établissement très fréquenté, où j'ai pris le rythme des heures de pointe, du service continu et de la mise en place et de la fermeture du site sans perdre en précision. Efficace, rapide, propre et méticuleux, sobre et sérieux, je travaille volontiers en équipe avec la cuisine et la salle. Mon passage chez EY, auprès de clients exigeants, m'a laissé le goût de la rigueur et du détail."
+    },
+    {
+      "titulo": "EXPÉRIENCE PROFESSIONNELLE",
+      "tipo": "experiencia",
+      "items": [
+        {
+          "puesto": "Auditeur informatique",
+          "detalle": "EY (cabinet international)  |  Buenos Aires, Argentine  |  déc. 2023 - août 2026",
+          "bullets": [
+            "Audits des systèmes d'information de grandes entreprises, avec des délais serrés."
+          ]
+        },
+        {
+          "puesto": "Serveur  |  Caissier",
+          "detalle": "Cafetería Jornal  |  Buenos Aires, Argentine  |  déc. 2022 - déc. 2023",
+          "bullets": [
+            "Accueil et service des clients en forte affluence, avec amabilité et attention.",
+            "Mise en route et fermeture de l'établissement : nettoyage et rangement des locaux selon les normes d'hygiène.",
+            "Réception et contrôle des marchandises, des dates et de la qualité ; suivi des stocks et signalement des ruptures.",
+            "Travail en équipe avec la cuisine et le bar aux heures de pointe."
+          ]
+        },
+        {
+          "puesto": "Plongeur",
+          "detalle": "Hôtel Abelux  |  Majorque, Espagne  |  juin 2022 - sept. 2022",
+          "bullets": [
+            "Lavage, rinçage et séchage de la vaisselle, des couverts, de la verrerie, des casseroles et des ustensiles de cuisine, en haute saison et au rythme du service.",
+            "Utilisation du lave-vaisselle professionnel : chargement, programmes, contrôle de la propreté et rangement du matériel à sa place.",
+            "Nettoyage et désinfection du poste de plonge, des plans de travail, des sols et des machines selon les normes HACCP.",
+            "Évacuation et tri des déchets ; remplacement des produits d'entretien et suivi de leur stock.",
+            "Soutien à l'équipe de cuisine et de salle aux heures de pointe, pour que la vaisselle propre soit toujours disponible."
+          ]
+        },
+        {
+          "puesto": "Technicien en électronique",
+          "detalle": "DEMEQ SRL  |  Buenos Aires, Argentine  |  avr. 2019 - déc. 2019",
+          "bullets": [
+            "Fabrication et montage d'instruments de mesure selon les normes qualité, avec soudage et dessoudage de cartes électroniques."
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "COMPÉTENCES",
+      "tipo": "lista",
+      "vinetas": false,
+      "items": [
+        "**Plonge et vaisselle :** lavage manuel et en machine, vaisselle, verrerie, couverts, batterie de cuisine, lave-vaisselle professionnel, rangement du matériel.",
+        "**Hygiène et nettoyage :** nettoyage et désinfection du poste de plonge, des plans de travail et des sols selon les normes HACCP, tri et évacuation des déchets.",
+        "**Organisation du poste :** mise en place avant le service, cadence soutenue en service continu, propreté et ordre permanents, travail méticuleux.",
+        "**Stocks :** suivi des produits d'entretien, réception et contrôle des marchandises, signalement des ruptures.",
+        "**Informatique :** Microsoft Office."
+      ]
+    },
+    {
+      "titulo": "FORMATION",
+      "tipo": "lista",
+      "vinetas": false,
+      "items": [
+        "**Ingénierie en intelligence artificielle** - Universidad de Palermo  |  2026 - en cours",
+        "**Ingénierie des systèmes d'information** - Universidad Tecnológica Nacional (UTN)  |  2020 - 2026 (20 matières sur 36)",
+        "**Technicien en électronique** (baccalauréat technique) - Instituto La Salette  |  2014 - 2019"
+      ]
+    },
+    {
+      "titulo": "LANGUES ET QUALITÉS",
+      "tipo": "lista",
+      "vinetas": false,
+      "items": [
+        "**Langues :** Espagnol - langue maternelle  |  Anglais - intermédiaire (B1)  |  Français - débutant (A1)",
+        "**Qualités :** efficacité, rapidité, propreté, minutie, sobriété, sérieux, esprit d'équipe, résistance au rythme soutenu"
+      ]
+    }
+  ]
+}

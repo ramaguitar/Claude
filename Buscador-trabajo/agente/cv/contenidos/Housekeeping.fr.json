@@ -1,0 +1,92 @@
+{
+  "plantilla": "housekeeping",
+  "puesto": "Housekeeping",
+  "idioma": "fr",
+  "nombre": "RAMIRO GUITAR",
+  "contacto": "Téléphone : +33 745234884 | E-mail : ramiroguitar28@gmail.com | Citoyenneté européenne",
+  "secciones": [
+    {
+      "titulo": "PROFIL PROFESSIONNEL",
+      "tipo": "parrafo",
+      "texto": "Profil minutieux, discret et doté du sens du détail, avec une expérience en accueil client, nettoyage et entretien des locaux. J’ai travaillé un an à la Cafetería Jornal (Buenos Aires), où j’assurais l’ouverture et la fermeture, la propreté des locaux et le contrôle des marchandises, puis une saison d’été à l’Hôtel Abelux (Majorque), chargé du nettoyage des chambres et des salles de bains et de l’accueil des clients. Chez EY, j’ai travaillé auprès d’une clientèle exigeante et assuré la documentation et le suivi d’activité avec le Pack Office, en coordination avec plusieurs services. Rigoureux, responsable, respectueux et doté d’un bon esprit d’équipe."
+    },
+    {
+      "titulo": "EXPÉRIENCE PROFESSIONNELLE",
+      "tipo": "experiencia",
+      "items": [
+        {
+          "puesto": "Auditeur informatique",
+          "detalle": "EY (cabinet international) | Buenos Aires, Argentine | déc. 2023 – août 2026",
+          "bullets": [
+            "Audits internes et externes des systèmes d’information de grandes entreprises, avec des délais serrés et le souci du détail.",
+            "Utilisation quotidienne du Pack Microsoft Office (notamment Excel avancé) pour documenter les travaux et préparer les livrables.",
+            "Suivi des observations jusqu’à leur clôture, en coordination avec les équipes Cybersécurité, Conformité et Risques."
+          ]
+        },
+        {
+          "puesto": "Serveur | Caissier",
+          "detalle": "Cafetería Jornal | Buenos Aires, Argentine | déc. 2022 – déc. 2023",
+          "bullets": [
+            "Nettoyage et rangement de la salle et des locaux selon les normes d’hygiène, avec ouverture et fermeture de l’établissement.",
+            "Accueil et service des clients dans un établissement très fréquenté, avec amabilité et sens de l’écoute.",
+            "Réception et contrôle des marchandises, contrôle des DLC et de la qualité, suivi des stocks et signalement des ruptures.",
+            "Tenue de caisse : encaissements en espèces, par carte et par paiement mobile, comptage et clôture de caisse.",
+            "Travail en équipe avec la cuisine et le bar pour respecter les temps de service aux heures de pointe.",
+            "Traitement des demandes et des réclamations, en veillant à la satisfaction de chaque client."
+          ]
+        },
+        {
+          "puesto": "Agent de nettoyage",
+          "detalle": "Hôtel Abelux | Majorque, Espagne | juin 2022 – sept. 2022",
+          "bullets": [
+            "Nettoyage approfondi des chambres et des salles de bains.",
+            "Préparation des chambres en départ et en recouche : changement du linge de lit et des serviettes, réfection des lits et réassort des produits d’accueil.",
+            "Respect des standards de qualité et d’hygiène de l’hôtel et des temps par chambre en haute saison.",
+            "Nettoyage des parties communes : couloirs, réception et escaliers.",
+            "Utilisation correcte des produits d’entretien et soin du chariot et du matériel de travail.",
+            "Signalement à la gouvernante des pannes, objets oubliés et incidents dans les chambres.",
+            "Réponse aux demandes des clients, avec discrétion et respect de leur intimité."
+          ]
+        },
+        {
+          "puesto": "Technicien en électronique",
+          "detalle": "DEMEQ SRL | Buenos Aires, Argentine | avr. 2019 – déc. 2019",
+          "bullets": [
+            "Fabrication et assemblage d’instruments de mesure selon les normes qualité, avec soudage et dessoudage de cartes électroniques."
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "COMPÉTENCES",
+      "tipo": "lista",
+      "vinetas": true,
+      "items": [
+        "**Nettoyage et entretien :** nettoyage et rangement des chambres et des locaux, soin du matériel, normes d’hygiène, contrôle qualité.",
+        "**Organisation et reporting :** Pack Microsoft Office (Excel avancé), Power BI, rapports de suivi, suivi des stocks, coordination entre services.",
+        "**Accueil client :** accueil, amabilité, sens de l’écoute, traitement des réclamations, clientèle exigeante.",
+        "**Qualités personnelles :** minutie, discrétion, sens du détail, rigueur, sens des responsabilités, respect, esprit d’équipe."
+      ]
+    },
+    {
+      "titulo": "FORMATION",
+      "tipo": "lista",
+      "vinetas": true,
+      "items": [
+        "Ingénierie en intelligence artificielle — Universidad de Palermo | 2026 – en cours",
+        "Ingénierie des systèmes d’information — Universidad Tecnológica Nacional (UTN) | 2020 – 2026 (20 matières validées sur 36)",
+        "Diplôme de technicien en électronique (enseignement secondaire) — Instituto La Salette | 2014 – 2019"
+      ]
+    },
+    {
+      "titulo": "LANGUES",
+      "tipo": "lista",
+      "vinetas": true,
+      "items": [
+        "Espagnol — Langue maternelle",
+        "Anglais — Intermédiaire (B1)",
+        "Français — Débutant (A1)"
+      ]
+    }
+  ]
+}
