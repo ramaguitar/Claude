@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="{{IDIOMA}}">
+<head>
+<meta charset="utf-8">
+<style>
+@page { size: Letter; margin: 0; }
+:root { --escala: {{ESCALA}}; --azul: #1f3864; --gris: #555555; }
+* { box-sizing: border-box; }
+html { font-size: calc(8.6pt * var(--escala)); }
+body { margin: 0; padding: 0.42in 0.5in 0.35in; font-family: Arial, Helvetica, sans-serif; color: #222;
+       line-height: 1.32; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+header { display: flex; justify-content: space-between; align-items: center; gap: 0.3in; margin-bottom: .6rem; }
+h1 { font-size: 2.7rem; color: var(--azul); margin: 0 0 .3rem; letter-spacing: .02em; }
+.titular { font-size: 1.2rem; font-weight: bold; color: var(--azul); margin-bottom: .3rem; }
+.contacto { font-size: 1rem; color: #333; }
+.foto { width: 0.95in; height: 0.95in; border-radius: 50%; object-fit: cover; border: 2px solid var(--azul); flex: none; }
+section { margin-top: .9rem; }
+h2 { font-size: 1.2rem; color: var(--azul); letter-spacing: .06em; text-transform: uppercase; margin: 0 0 .4rem;
+     padding-bottom: .15rem; border-bottom: 1px solid var(--azul); }
+.parrafo { margin: 0; text-align: justify; }
+.exp { margin-bottom: .45rem; }
+.puesto { font-weight: bold; font-size: 1.05rem; }
+.detalle { color: var(--gris); }
+ul { margin: .15rem 0 0; padding-left: 1.2rem; }
+ul.sin-vinetas { list-style: none; padding-left: 0; }
+li { margin: .08rem 0; }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>{{NOMBRE}}</h1>
+    {{TITULAR}}
+    <div class="contacto">{{CONTACTO}}</div>
+  </div>
+  <img class="foto" src="{{FOTO}}" alt="">
+</header>
+{{SECCIONES}}
+</body>
+</html>

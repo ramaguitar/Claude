@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="{{IDIOMA}}">
+<head>
+<meta charset="utf-8">
+<style>
+@page { size: A4; margin: 0; }
+:root { --escala: {{ESCALA}}; --azul: #2f5496; --gris: #595959; }
+* { box-sizing: border-box; }
+html { font-size: calc(9.6pt * var(--escala)); }
+body { margin: 0; padding: 12mm 15mm 10mm; font-family: Carlito, Calibri, "Segoe UI", Arial, sans-serif;
+       color: #1a1a1a; line-height: 1.28; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+header { display: flex; justify-content: space-between; align-items: center; gap: 6mm; margin-bottom: 1rem; }
+h1 { font-size: 2.2rem; margin: 0 0 .25rem; letter-spacing: .01em; }
+.titular { font-size: 1.2rem; font-weight: bold; color: var(--azul); margin-bottom: .3rem; }
+.contacto { font-size: .94rem; }
+.foto { width: 26mm; height: 26mm; border-radius: 50%; object-fit: cover; border: 1.5px solid var(--azul);
+        padding: 1.2mm; flex: none; }
+section { margin-top: .8rem; }
+h2 { font-size: 1.05rem; color: var(--azul); text-transform: uppercase; margin: 0 0 .35rem;
+     padding-bottom: .1rem; border-bottom: 1.2px solid var(--azul); }
+.parrafo { margin: 0; text-align: justify; }
+.exp { margin-bottom: .35rem; }
+.puesto { font-weight: bold; }
+.detalle { font-style: italic; color: var(--gris); }
+ul { margin: .1rem 0 0; padding-left: 1.1rem; }
+ul.sin-vinetas { list-style: none; padding-left: 0; }
+li { margin: .05rem 0; }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>{{NOMBRE}}</h1>
+    {{TITULAR}}
+    <div class="contacto">{{CONTACTO}}</div>
+  </div>
+  <img class="foto" src="{{FOTO}}" alt="">
+</header>
+{{SECCIONES}}
+</body>
+</html>
