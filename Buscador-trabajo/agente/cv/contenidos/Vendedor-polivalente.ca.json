@@ -1,0 +1,87 @@
+{
+  "plantilla": "especifico",
+  "puesto": "Vendedor-polivalente",
+  "idioma": "ca",
+  "nombre": "RAMIRO GUITAR",
+  "titular": "Venedor polivalent  |  Lloguer de material  |  Atenció al client",
+  "contacto": "Telèfon: +33 7 45 23 48 84  |  Correu electrònic: ramiroguitar28@gmail.com  |  Ciutadania europea",
+  "secciones": [
+    {
+      "titulo": "PERFIL PROFESSIONAL",
+      "tipo": "parrafo",
+      "texto": "Venedor i agent de lloguer, apassionat de la muntanya i dels esports de neu. Tinc al meu haver una temporada completa en una botiga de lloguer de material a Mallorca: assessorament tècnic als clients sobre el material adequat al seu nivell, gestió dels lloguers, de les devolucions i del cobrament, i manteniment del material en una botiga neta i endreçada. A això s’hi afegeix un any de venda, atenció i caixa en un establiment molt concorregut, amb recepció i control de la mercaderia, reposició i seguiment de l’estoc. Perfil cordial, responsable i orientat al client, amb esperit d’equip i gust per l’assessorament a la botiga. Gairebé tres anys com a auditor informàtic a EY aporten rigor, organització i experiència amb clients exigents."
+    },
+    {
+      "titulo": "EXPERIÈNCIA PROFESSIONAL",
+      "tipo": "experiencia",
+      "items": [
+        {
+          "puesto": "Auditor informàtic",
+          "detalle": "EY (consultora internacional)  |  Buenos Aires, Argentina  |  des. 2023 - ag. 2026",
+          "bullets": [
+            "Treball amb clients exigents (grans empreses), amb terminis ajustats i un gran rigor.",
+            "Coordinació amb diversos equips; informes de seguiment amb Microsoft Office (Excel avançat) i Power BI."
+          ]
+        },
+        {
+          "puesto": "Cambrer  |  Caixer",
+          "detalle": "Cafetería Jornal  |  Buenos Aires, Argentina  |  des. 2022 - des. 2023",
+          "bullets": [
+            "Atenció, assessorament i venda a una clientela nombrosa, amb cortesia, disponibilitat i capacitat d’escolta.",
+            "Gestió de la caixa: cobraments en efectiu, amb targeta i sense contacte, recompte i tancament de caixa.",
+            "Recepció i control dels lliuraments: conformitat de les comandes, qualitat dels productes, reposició i seguiment de l’estoc.",
+            "Obertura i tancament de l’establiment: preparació, neteja i ordenació dels locals.",
+            "Treball en equip amb la cuina i el bar per complir els temps de servei a les hores punta."
+          ]
+        },
+        {
+          "puesto": "Atenció i lloguer de material (temporada d’estiu)",
+          "detalle": "Soles, surf shop  |  Mallorca, Espanya  |  juny 2022 - set. 2022",
+          "bullets": [
+            "Atenció i assessorament tècnic a la clientela en temporada alta: elecció del material segons el nivell, la talla i les expectatives de cadascú.",
+            "Responsable de la secció de lloguer: registre dels contractes, cobrament i control de les devolucions.",
+            "Preparació i manteniment del material de lloguer: aplicació de cera, control de l’estat, reparacions i verificació abans de cada sortida.",
+            "Esbandida, assecatge i desament del material; botiga neta i endreçada, a punt per a l’obertura."
+          ]
+        },
+        {
+          "puesto": "Tècnic en electrònica",
+          "detalle": "DEMEQ SRL  |  Buenos Aires, Argentina  |  abr. 2019 - des. 2019",
+          "bullets": [
+            "Muntatge i ajust d’instruments de mesura segons les normes de qualitat internes: treball manual de precisió amb material tècnic."
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "COMPETÈNCIES",
+      "tipo": "lista",
+      "vinetas": false,
+      "items": [
+        "**Venda i atenció al client:** acollida cordial i disponible, assessorament sobre productes i accessoris, venda, escolta activa, gestió de reclamacions, servei en períodes de gran afluència.",
+        "**Lloguer:** registre dels lloguers i de les devolucions, preparació, control i manteniment del material, endreçament.",
+        "**Caixa i mercaderia:** cobraments en efectiu, amb targeta i sense contacte, recompte i tancament de caixa, recepció i control de la mercaderia, reposició, seguiment de l’estoc.",
+        "**Botiga:** neteja, ordre i organització dels locals, obertura i tancament de l’establiment.",
+        "**Qualitats personals:** facilitat de contacte, actitud positiva, treball en equip, disponibilitat, rigor, curiositat tècnica, sentit de la responsabilitat, ganes d’aprendre."
+      ]
+    },
+    {
+      "titulo": "FORMACIÓ",
+      "tipo": "lista",
+      "vinetas": false,
+      "items": [
+        "**Enginyeria en intel·ligència artificial** - Universidad de Palermo  |  2026 - en curs",
+        "**Enginyeria de sistemes d’informació** - Universidad Tecnológica Nacional (UTN)  |  2020 - 2026 (20 assignatures de 36)",
+        "**Tècnic en electrònica** - Instituto La Salette  |  2014 - 2019"
+      ]
+    },
+    {
+      "titulo": "IDIOMES",
+      "tipo": "lista",
+      "vinetas": false,
+      "items": [
+        "Espanyol - llengua materna  |  Anglès - intermedi (B1)  |  Català - principiant (A1)"
+      ]
+    }
+  ]
+}

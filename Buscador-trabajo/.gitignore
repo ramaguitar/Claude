@@ -1,0 +1,6 @@
+agente/.env
+agente/.venv/
+agente/lotes/
+agente/cv/previas/
+__pycache__/
+.pytest_cache/

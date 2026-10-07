@@ -1,0 +1,92 @@
+{
+  "plantilla": "housekeeping",
+  "puesto": "Housekeeping",
+  "idioma": "ca",
+  "nombre": "RAMIRO GUITAR",
+  "contacto": "Telèfon: +33 745234884 | Correu electrònic: ramiroguitar28@gmail.com | Ciutadania europea",
+  "secciones": [
+    {
+      "titulo": "PERFIL PROFESSIONAL",
+      "tipo": "parrafo",
+      "texto": "Perfil minuciós, discret i amb sentit del detall, amb experiència en atenció al client, neteja i manteniment de locals. Vaig treballar un any a la Cafetería Jornal (Buenos Aires), on m’encarregava de l’obertura i el tancament, la neteja dels locals i el control de la mercaderia, i després una temporada d’estiu a l’Hotel Abelux (Mallorca), encarregat de la neteja de les habitacions i dels banys i de l’atenció als clients. A EY vaig treballar amb una clientela exigent i em vaig encarregar de la documentació i del seguiment de l’activitat amb el paquet Office, en coordinació amb diversos departaments. Rigorós, responsable, respectuós i amb un bon esperit d’equip."
+    },
+    {
+      "titulo": "EXPERIÈNCIA PROFESSIONAL",
+      "tipo": "experiencia",
+      "items": [
+        {
+          "puesto": "Auditor informàtic",
+          "detalle": "EY (consultora internacional) | Buenos Aires, Argentina | des. 2023 – ag. 2026",
+          "bullets": [
+            "Auditories internes i externes dels sistemes d’informació de grans empreses, amb terminis ajustats i atenció al detall.",
+            "Ús diari del paquet Microsoft Office (especialment Excel avançat) per documentar els treballs i preparar els lliuraments.",
+            "Seguiment de les observacions fins al seu tancament, en coordinació amb els equips de Ciberseguretat, Compliment i Riscos."
+          ]
+        },
+        {
+          "puesto": "Cambrer | Caixer",
+          "detalle": "Cafetería Jornal | Buenos Aires, Argentina | des. 2022 – des. 2023",
+          "bullets": [
+            "Neteja i ordenació de la sala i dels locals segons les normes d’higiene, amb obertura i tancament de l’establiment.",
+            "Atenció i servei als clients en un establiment molt concorregut, amb amabilitat i capacitat d’escolta.",
+            "Recepció i control de la mercaderia, control de les dates de caducitat i de la qualitat, seguiment de l’estoc i avís de les ruptures.",
+            "Gestió de la caixa: cobraments en efectiu, amb targeta i amb pagament mòbil, recompte i tancament de caixa.",
+            "Treball en equip amb la cuina i el bar per complir els temps de servei a les hores punta.",
+            "Gestió de les sol·licituds i de les reclamacions, vetllant per la satisfacció de cada client."
+          ]
+        },
+        {
+          "puesto": "Agent de neteja",
+          "detalle": "Hotel Abelux | Mallorca, Espanya | juny 2022 – set. 2022",
+          "bullets": [
+            "Neteja a fons de les habitacions i dels banys.",
+            "Preparació de les habitacions de sortida i de continuació: canvi de la roba de llit i de les tovalloles, fer els llits i reposició dels productes d’acollida.",
+            "Compliment dels estàndards de qualitat i d’higiene de l’hotel i dels temps per habitació en temporada alta.",
+            "Neteja de les zones comunes: passadissos, recepció i escales.",
+            "Ús correcte dels productes de neteja i cura del carro i del material de treball.",
+            "Avís a la governanta de les avaries, objectes oblidats i incidències a les habitacions.",
+            "Resposta a les peticions dels clients, amb discreció i respecte per la seva intimitat."
+          ]
+        },
+        {
+          "puesto": "Tècnic en electrònica",
+          "detalle": "DEMEQ SRL | Buenos Aires, Argentina | abr. 2019 – des. 2019",
+          "bullets": [
+            "Fabricació i muntatge d’instruments de mesura segons les normes de qualitat, amb soldadura i dessoldadura de plaques electròniques."
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "COMPETÈNCIES",
+      "tipo": "lista",
+      "vinetas": true,
+      "items": [
+        "**Neteja i manteniment:** neteja i ordenació de les habitacions i dels locals, cura del material, normes d’higiene, control de qualitat.",
+        "**Organització i informes:** paquet Microsoft Office (Excel avançat), Power BI, informes de seguiment, seguiment de l’estoc, coordinació entre departaments.",
+        "**Atenció al client:** acollida, amabilitat, capacitat d’escolta, gestió de reclamacions, clientela exigent.",
+        "**Qualitats personals:** minuciositat, discreció, sentit del detall, rigor, sentit de la responsabilitat, respecte, esperit d’equip."
+      ]
+    },
+    {
+      "titulo": "FORMACIÓ",
+      "tipo": "lista",
+      "vinetas": true,
+      "items": [
+        "Enginyeria en intel·ligència artificial — Universidad de Palermo | 2026 – en curs",
+        "Enginyeria de sistemes d’informació — Universidad Tecnológica Nacional (UTN) | 2020 – 2026 (20 assignatures aprovades de 36)",
+        "Títol de tècnic en electrònica (ensenyament secundari) — Instituto La Salette | 2014 – 2019"
+      ]
+    },
+    {
+      "titulo": "IDIOMES",
+      "tipo": "lista",
+      "vinetas": true,
+      "items": [
+        "Espanyol — Llengua materna",
+        "Anglès — Intermedi (B1)",
+        "Català — Principiant (A1)"
+      ]
+    }
+  ]
+}

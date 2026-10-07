@@ -1,0 +1,87 @@
+{
+  "plantilla": "especifico",
+  "puesto": "Vendedor-polivalente",
+  "idioma": "fr",
+  "nombre": "RAMIRO GUITAR",
+  "titular": "Vendeur polyvalent  |  Location de matériel  |  Relation client",
+  "contacto": "Téléphone : +33 7 45 23 48 84  |  E-mail : ramiroguitar28@gmail.com  |  Citoyenneté européenne",
+  "secciones": [
+    {
+      "titulo": "PROFIL PROFESSIONNEL",
+      "tipo": "parrafo",
+      "texto": "Vendeur et agent de location, passionné de montagne et de sports de neige. J'ai à mon actif une saison complète dans un magasin de location de matériel à Majorque : conseil technique aux clients sur le matériel adapté à leur niveau, gestion des locations, des retours et de l'encaissement, et entretien du matériel dans un magasin propre et rangé. À cela s'ajoute un an de vente, d'accueil et de caisse dans un établissement à forte affluence, avec réception et contrôle des marchandises, réassort et suivi des stocks. Profil cordial, responsable et orienté client, avec l'esprit d'équipe et le goût du conseil en magasin. Près de trois ans comme auditeur informatique chez EY apportent rigueur, organisation et expérience auprès de clients exigeants."
+    },
+    {
+      "titulo": "EXPÉRIENCE PROFESSIONNELLE",
+      "tipo": "experiencia",
+      "items": [
+        {
+          "puesto": "Auditeur informatique",
+          "detalle": "EY (cabinet international)  |  Buenos Aires, Argentine  |  déc. 2023 - août 2026",
+          "bullets": [
+            "Travail auprès de clients exigeants (grandes entreprises), avec des délais serrés et une grande rigueur.",
+            "Coordination avec plusieurs équipes ; rapports de suivi avec Microsoft Office (Excel avancé) et Power BI."
+          ]
+        },
+        {
+          "puesto": "Serveur  |  Caissier",
+          "detalle": "Cafetería Jornal  |  Buenos Aires, Argentine  |  déc. 2022 - déc. 2023",
+          "bullets": [
+            "Accueil, conseil et vente auprès d'une clientèle nombreuse, avec courtoisie, disponibilité et sens de l'écoute.",
+            "Tenue de caisse : encaissements en espèces, par carte et sans contact, comptage et clôture de caisse.",
+            "Réception et contrôle des livraisons : conformité des commandes, qualité des produits, réassort et suivi des stocks.",
+            "Ouverture et fermeture de l'établissement : mise en place, nettoyage et rangement des locaux.",
+            "Travail en équipe avec la cuisine et le bar pour tenir les temps de service aux heures de pointe."
+          ]
+        },
+        {
+          "puesto": "Accueil et location de matériel (saison d'été)",
+          "detalle": "Soles, surf shop  |  Majorque, Espagne  |  juin 2022 - sept. 2022",
+          "bullets": [
+            "Accueil et conseil technique de la clientèle en haute saison : choix du matériel selon le niveau, la taille et les attentes de chacun.",
+            "Prise en charge du rayon location : enregistrement des contrats, encaissement et contrôle des retours.",
+            "Préparation et entretien du matériel de location : application de wax, contrôle de l'état, réparations et vérification avant chaque sortie.",
+            "Rinçage, séchage et rangement du matériel ; magasin propre et rangé, prêt pour l'ouverture."
+          ]
+        },
+        {
+          "puesto": "Technicien en électronique",
+          "detalle": "DEMEQ SRL  |  Buenos Aires, Argentine  |  avr. 2019 - déc. 2019",
+          "bullets": [
+            "Assemblage et réglage d'instruments de mesure selon les normes qualité internes : travail manuel de précision sur du matériel technique."
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "COMPÉTENCES",
+      "tipo": "lista",
+      "vinetas": false,
+      "items": [
+        "**Vente et relation client :** accueil cordial et disponible, conseil sur les produits et accessoires, vente, écoute active, gestion des réclamations, service en période de forte affluence.",
+        "**Location :** enregistrement des locations et des retours, préparation, contrôle et entretien du matériel, rangement.",
+        "**Caisse et marchandises :** encaissements en espèces, par carte et sans contact, comptage et clôture de caisse, réception et contrôle des marchandises, réassort, suivi des stocks.",
+        "**Magasin :** nettoyage, rangement et organisation des locaux, ouverture et fermeture de l'établissement.",
+        "**Qualités personnelles :** sens du contact, attitude positive, travail en équipe, disponibilité, rigueur, curiosité technique, sens des responsabilités, motivation pour apprendre."
+      ]
+    },
+    {
+      "titulo": "FORMATION",
+      "tipo": "lista",
+      "vinetas": false,
+      "items": [
+        "**Ingénierie en intelligence artificielle** - Universidad de Palermo  |  2026 - en cours",
+        "**Ingénierie des systèmes d'information** - Universidad Tecnológica Nacional (UTN)  |  2020 - 2026 (20 matières sur 36)",
+        "**Technicien en électronique** - Instituto La Salette  |  2014 - 2019"
+      ]
+    },
+    {
+      "titulo": "LANGUES",
+      "tipo": "lista",
+      "vinetas": false,
+      "items": [
+        "Espagnol - langue maternelle  |  Anglais - intermédiaire (B1)  |  Français - débutant (A1)"
+      ]
+    }
+  ]
+}
