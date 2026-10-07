@@ -18,6 +18,7 @@ def main(argv=None) -> int:
     p.add_argument("--catalogo", type=Path, default=AGENTE / "cvs.json")
     p.add_argument("--base", type=Path, default=AGENTE.parent)
     p.add_argument("--foto", type=Path, default=AGENTE / "cv" / "foto.png")
+    p.add_argument("--pendientes", type=Path, default=AGENTE / "cvs_pendientes.json")
     sub = p.add_subparsers(dest="comando", required=True)
     r = sub.add_parser("render", help="contenido JSON -> PDF de 1 página + PNG de vista previa")
     r.add_argument("contenido", type=Path)
@@ -27,6 +28,8 @@ def main(argv=None) -> int:
     g.add_argument("puesto")
     g.add_argument("idioma")
     g.add_argument("ruta", type=Path)
+    ap = sub.add_parser("aprobar", help="marca un CV traducido como revisado: desde ahí se envía sin pasar por borrador")
+    ap.add_argument("ruta", type=Path)
     a = p.parse_args(argv)
 
     if a.comando == "render":
@@ -44,15 +47,29 @@ def main(argv=None) -> int:
     if not ruta.is_file():
         print(json.dumps({"error": f"No existe {ruta}"}, ensure_ascii=False))
         return 1
+    relativa = ruta.relative_to(a.base.resolve()).as_posix()
+    pendientes = json.loads(a.pendientes.read_text(encoding="utf-8")) if a.pendientes.exists() else []
+
+    def guardar_pendientes(lista):
+        a.pendientes.write_text(json.dumps(lista, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+    if a.comando == "aprobar":
+        guardar_pendientes([r for r in pendientes if r != relativa])
+        print(json.dumps({"aprobado": relativa}, ensure_ascii=False))
+        return 0
+
     n = paginas(ruta)
     if n != 1:
         print(json.dumps({"error": f"{ruta} tiene {n} páginas: solo se registran CVs de 1 página"}, ensure_ascii=False))
         return 1
-    relativa = ruta.relative_to(a.base.resolve()).as_posix()
     catalogo = json.loads(a.catalogo.read_text(encoding="utf-8")) if a.catalogo.exists() else {}
     catalogo.setdefault(a.puesto, {})[a.idioma] = relativa
     a.catalogo.write_text(json.dumps(catalogo, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(json.dumps({"puesto": a.puesto, "idioma": a.idioma, "ruta": relativa}, ensure_ascii=False))
+    # un CV traducido nuevo no se envía solo hasta que Ramiro lo apruebe (cv.py aprobar)
+    if relativa not in pendientes:
+        guardar_pendientes(pendientes + [relativa])
+    print(json.dumps({"puesto": a.puesto, "idioma": a.idioma, "ruta": relativa, "pendiente": True},
+                     ensure_ascii=False))
     return 0
 
 

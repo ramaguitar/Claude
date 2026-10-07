@@ -100,7 +100,8 @@ def test_cli_registrar_actualiza_catalogo(tmp_path, capsys, hacer_pdf):
     pdf = hacer_pdf(base / "CVs" / "Barman" / "Alemán" / "CV-RamiroGuitar.pdf")
     catalogo = tmp_path / "cvs.json"
     catalogo.write_text(json.dumps({"Barman": {"fr": "CVs/Barman/CV-RamiroGuitar.pdf"}}), encoding="utf-8")
-    rc = cv.main(["--catalogo", str(catalogo), "--base", str(base), "registrar", "Barman", "de", str(pdf)])
+    rc = cv.main(["--catalogo", str(catalogo), "--base", str(base), "--pendientes", str(tmp_path / "p.json"),
+                  "registrar", "Barman", "de", str(pdf)])
     assert rc == 0
     assert json.loads(catalogo.read_text(encoding="utf-8"))["Barman"] == {
         "fr": "CVs/Barman/CV-RamiroGuitar.pdf", "de": "CVs/Barman/Alemán/CV-RamiroGuitar.pdf"}
@@ -111,7 +112,8 @@ def test_cli_registrar_rechaza_cv_de_varias_paginas(tmp_path, capsys, hacer_pdf)
     pdf = hacer_pdf(base / "CVs" / "Barman" / "Alemán" / "CV-RamiroGuitar.pdf", paginas=2)
     catalogo = tmp_path / "cvs.json"
     catalogo.write_text("{}", encoding="utf-8")
-    rc = cv.main(["--catalogo", str(catalogo), "--base", str(base), "registrar", "Barman", "de", str(pdf)])
+    rc = cv.main(["--catalogo", str(catalogo), "--base", str(base), "--pendientes", str(tmp_path / "p.json"),
+                  "registrar", "Barman", "de", str(pdf)])
     assert rc == 1 and json.loads(catalogo.read_text(encoding="utf-8")) == {}
 
 
@@ -123,3 +125,14 @@ def test_cli_render_no_pisa_un_cv_existente(tmp_path, capsys, foto, monkeypatch)
     monkeypatch.setattr(cv, "renderizar", lambda *a, **k: (_ for _ in ()).throw(AssertionError("no debe renderizar")))
     rc = cv.main(["--foto", str(foto), "render", str(contenido), str(original)])
     assert rc == 1 and original.read_bytes() == b"%PDF original"
+
+
+def test_cv_registrado_queda_pendiente_hasta_que_ramiro_lo_aprueba(tmp_path, capsys, hacer_pdf):
+    base = tmp_path / "base"
+    pdf = hacer_pdf(base / "CVs" / "Barman" / "Alemán" / "CV-RamiroGuitar.pdf")
+    catalogo, pendientes = tmp_path / "cvs.json", tmp_path / "cvs_pendientes.json"
+    comunes = ["--catalogo", str(catalogo), "--base", str(base), "--pendientes", str(pendientes)]
+    assert cv.main(comunes + ["registrar", "Barman", "de", str(pdf)]) == 0
+    assert json.loads(pendientes.read_text(encoding="utf-8")) == ["CVs/Barman/Alemán/CV-RamiroGuitar.pdf"]
+    assert cv.main(comunes + ["aprobar", str(pdf)]) == 0
+    assert json.loads(pendientes.read_text(encoding="utf-8")) == []

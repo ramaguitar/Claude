@@ -1,5 +1,6 @@
 """Registro de lugares contactados (contactados.csv) y reglas de deduplicación."""
 import csv
+from collections import Counter
 from pathlib import Path
 
 COLUMNAS = ["fecha", "zona", "lugar", "tipo", "email", "dominio", "web", "puesto",
@@ -32,6 +33,7 @@ class Registro:
         self.dominios: set[str] = set()
         self.columnas = list(COLUMNAS)
         self.delimitador = ","
+        self._enviados_por_fecha: Counter = Counter()
         if self.ruta.exists() and self.ruta.stat().st_size > 0:
             with self.ruta.open(encoding="utf-8-sig", newline="") as f:
                 encabezado = f.readline()
@@ -47,6 +49,8 @@ class Registro:
                 for fila in lector:
                     if fila.get("email"):
                         self._recordar(fila["email"])
+                    if fila.get("estado") == "enviado":
+                        self._enviados_por_fecha[fila.get("fecha", "")] += 1
 
     @staticmethod
     def verificar_escritura(ruta: Path) -> None:
@@ -86,6 +90,12 @@ class Registro:
                 w.writeheader()
             w.writerow(fila)
         self._recordar(fila["email"])
+        if fila.get("estado") == "enviado":
+            self._enviados_por_fecha[fila.get("fecha", "")] += 1
+
+    def enviados_el(self, fecha: str) -> int:
+        """Cantidad de mails enviados (no borradores) registrados con esa fecha."""
+        return self._enviados_por_fecha[fecha]
 
 
 def importar_enviados(registro: Registro, enviados: list[dict]) -> int:
