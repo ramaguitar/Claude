@@ -1,0 +1,12 @@
+{
+  "por_dia": {
+    "lunes": "Suiza",
+    "martes": "Francia",
+    "miercoles": "Suiza",
+    "jueves": "Andorra",
+    "viernes": "Suiza",
+    "sabado": "Francia",
+    "domingo": "Italia"
+  },
+  "prioridad": ["Suiza", "Francia", "Andorra", "Italia"]
+}

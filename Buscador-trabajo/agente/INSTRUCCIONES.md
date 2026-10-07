@@ -28,9 +28,14 @@ es preferible enviar 30 mails impecables que 40 con errores.
 3. Leé `contactados.csv` para saber qué emails y dominios ya están usados.
 
 ## 2. Elegir zona
-Tomá la primera zona con `estado` = `en_curso`; si no hay, la primera `pendiente`, y marcala
-`en_curso` en `zonas.json`. Si la zona se agota (no quedan lugares nuevos con mail), marcala
-`cubierta` y seguí con la siguiente hasta juntar ~40 mails válidos o terminar la lista.
+Ejecutá `uv run python zona_del_dia.py`. Devuelve el país del día según la rotación semanal de Ramiro
+(`rotacion.json`: lun/mié/vie Suiza, mar/sáb Francia, jue Andorra, dom Italia) y la lista **ordenada** de zonas
+para hoy: primero las del país del día y, si se agotan, las de los demás países por prioridad
+(Suiza → Francia → Andorra → Italia). **Respetá ese orden; no elijas zonas por tu cuenta.**
+- Trabajá la primera zona de la lista y marcala `en_curso` en `zonas.json`.
+- Si se agota (no quedan lugares nuevos con mail), marcala `cubierta` y pasá a la siguiente de la lista,
+  hasta juntar ~40 mails válidos o terminar la lista.
+- En el resumen, indicá el país del día y si tuviste que pasar a otro país.
 
 ## 3. Encontrar lugares
 Por zona, buscá en este orden:
