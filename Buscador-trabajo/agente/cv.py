@@ -65,11 +65,8 @@ def main(argv=None) -> int:
     catalogo = json.loads(a.catalogo.read_text(encoding="utf-8")) if a.catalogo.exists() else {}
     catalogo.setdefault(a.puesto, {})[a.idioma] = relativa
     a.catalogo.write_text(json.dumps(catalogo, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    # un CV traducido nuevo no se envía solo hasta que Ramiro lo apruebe (cv.py aprobar)
-    if relativa not in pendientes:
-        guardar_pendientes(pendientes + [relativa])
-    print(json.dumps({"puesto": a.puesto, "idioma": a.idioma, "ruta": relativa, "pendiente": True},
-                     ensure_ascii=False))
+    # desde el 2026-10-07 los CVs traducidos se envían directo (decisión de Ramiro): no quedan pendientes
+    print(json.dumps({"puesto": a.puesto, "idioma": a.idioma, "ruta": relativa}, ensure_ascii=False))
     return 0
 
 

@@ -127,12 +127,11 @@ def test_cli_render_no_pisa_un_cv_existente(tmp_path, capsys, foto, monkeypatch)
     assert rc == 1 and original.read_bytes() == b"%PDF original"
 
 
-def test_cv_registrado_queda_pendiente_hasta_que_ramiro_lo_aprueba(tmp_path, capsys, hacer_pdf):
+def test_cv_registrado_no_queda_pendiente_se_envia_directo(tmp_path, capsys, hacer_pdf):
+    # decisión de Ramiro (2026-10-07): los CVs traducidos por el agente se envían sin pasar por borrador
     base = tmp_path / "base"
     pdf = hacer_pdf(base / "CVs" / "Barman" / "Alemán" / "CV-RamiroGuitar.pdf")
     catalogo, pendientes = tmp_path / "cvs.json", tmp_path / "cvs_pendientes.json"
     comunes = ["--catalogo", str(catalogo), "--base", str(base), "--pendientes", str(pendientes)]
     assert cv.main(comunes + ["registrar", "Barman", "de", str(pdf)]) == 0
-    assert json.loads(pendientes.read_text(encoding="utf-8")) == ["CVs/Barman/Alemán/CV-RamiroGuitar.pdf"]
-    assert cv.main(comunes + ["aprobar", str(pdf)]) == 0
-    assert json.loads(pendientes.read_text(encoding="utf-8")) == []
+    assert not pendientes.exists() or json.loads(pendientes.read_text(encoding="utf-8")) == []

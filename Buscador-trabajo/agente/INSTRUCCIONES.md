@@ -101,8 +101,8 @@ Buscá la ruta en `cvs.json[puesto][idioma]`. Si no existe, traducilo (paso 6).
    - Si algo se corta, se superpone o `ok` es `false`, acortá frases manteniendo el sentido y repetí.
    - Máximo 3 intentos. Si sigue sin quedar bien, usá Housekeeping del idioma y anotalo.
 6. `uv run python cv.py registrar <Puesto> <idioma> <ruta destino>`
-   - El CV queda **pendiente de aprobación** en `cvs_pendientes.json`: todo mail que lo lleve queda en
-     **borrador** (no se envía) hasta que Ramiro lo apruebe. El script lo hace solo.
+   - Desde ese momento el CV se usa y **se envía directamente** (decisión de Ramiro del 2026-10-07):
+     por eso la revisión visual del paso 5 tiene que ser rigurosa.
 7. En el mail correspondiente del lote poné `"cv_nuevo": true`.
 
 ## 7. Redactar
@@ -150,7 +150,6 @@ Escribí `lotes/AAAA-MM-DD.json`: una lista de objetos con estos campos:
   - Envía con 45–90 s al azar entre mails (40 mails ≈ 45 minutos): **ejecutalo en segundo plano**
     (`run_in_background`) y esperá la notificación de que terminó; no lo cortes ni lo relances mientras corre.
   - Nunca salen más de 40 por día (tope del script); el excedente queda en borrador.
-  - Los mails con un CV pendiente de aprobación quedan en borrador con su motivo.
 - Leé el JSON de salida (`enviados`, `creados` = borradores con `motivo_borrador`, `salteados`, `errores`):
   - Si hay `salteados`, no reintentes esos lugares hoy.
   - Código de salida 1 («No se pudo conectar» o «Gmail cortó»): reintentá el mismo comando **una vez**;
@@ -167,9 +166,8 @@ Escribí `lotes/AAAA-MM-DD.json`: una lista de objetos con estos campos:
 **Enviados:** N (zonas: …) · **Quedaron en borrador:** M
 ## Con vacante concreta
 - Lugar (Zona) — Puesto — link del aviso
-## 📄 CVs traducidos para aprobar (sus mails quedaron en borrador)
-- <Puesto> <IDIOMA> → borrador a <Lugar> (<email>). Para aprobarlo: revisá el borrador, envialo vos y
-  pedile a Claude «aprobá el CV <Puesto> <IDIOMA>» (o `uv run python cv.py aprobar <ruta>`).
+## 📄 CVs traducidos hoy (ya enviados; Ramiro puede revisarlos en Enviados o en CVs/)
+- <Puesto> <IDIOMA> → <ruta del PDF>, primer envío a <Lugar> (<email>)
 ## Borradores por tope diario
 - …
 ## Postular a mano
