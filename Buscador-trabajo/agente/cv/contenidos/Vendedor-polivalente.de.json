@@ -1,0 +1,87 @@
+{
+  "plantilla": "especifico",
+  "puesto": "Vendedor-polivalente",
+  "idioma": "de",
+  "nombre": "RAMIRO GUITAR",
+  "titular": "Allround-Verkäufer  |  Materialvermietung  |  Kundenbetreuung",
+  "contacto": "Telefon: +33 7 45 23 48 84  |  E-Mail: ramiroguitar28@gmail.com  |  EU-Staatsbürgerschaft",
+  "secciones": [
+    {
+      "titulo": "BERUFSPROFIL",
+      "tipo": "parrafo",
+      "texto": "Verkäufer und Vermietungsmitarbeiter mit Leidenschaft für die Berge und den Wintersport. Ich habe eine ganze Saison in einem Materialverleih auf Mallorca gearbeitet: technische Beratung der Kunden zum passenden Material für ihr Niveau, Abwicklung von Vermietungen, Rückgaben und Kasse sowie Pflege des Materials in einem sauberen und aufgeräumten Geschäft. Dazu kommt ein Jahr Verkauf, Empfang und Kasse in einem stark frequentierten Betrieb, mit Warenannahme und -kontrolle, Nachfüllen und Bestandsführung. Herzlich, verantwortungsbewusst und kundenorientiert, mit Teamgeist und Freude an der Beratung im Geschäft. Fast drei Jahre als IT-Auditor bei EY bringen Genauigkeit, Organisation und Erfahrung mit anspruchsvollen Kunden."
+    },
+    {
+      "titulo": "BERUFSERFAHRUNG",
+      "tipo": "experiencia",
+      "items": [
+        {
+          "puesto": "IT-Auditor",
+          "detalle": "EY (internationale Beratungsgesellschaft)  |  Buenos Aires, Argentinien  |  Dez. 2023 - Aug. 2026",
+          "bullets": [
+            "Arbeit mit anspruchsvollen Kunden (Grossunternehmen), mit engen Fristen und grosser Sorgfalt.",
+            "Koordination mit mehreren Teams; Fortschrittsberichte mit Microsoft Office (Excel fortgeschritten) und Power BI."
+          ]
+        },
+        {
+          "puesto": "Kellner  |  Kassierer",
+          "detalle": "Cafetería Jornal  |  Buenos Aires, Argentinien  |  Dez. 2022 - Dez. 2023",
+          "bullets": [
+            "Empfang, Beratung und Verkauf für zahlreiche Kunden, mit Höflichkeit, Hilfsbereitschaft und einem offenen Ohr.",
+            "Kassenführung: Bar-, Karten- und kontaktlose Zahlungen, Kassenzählung und Kassenabschluss.",
+            "Annahme und Kontrolle der Lieferungen: Übereinstimmung der Bestellungen, Produktqualität, Nachfüllen und Bestandsführung.",
+            "Öffnen und Schliessen des Betriebs: Vorbereitung, Reinigung und Aufräumen der Räumlichkeiten.",
+            "Teamarbeit mit Küche und Bar, um die Servicezeiten zu Stosszeiten einzuhalten."
+          ]
+        },
+        {
+          "puesto": "Empfang und Materialvermietung (Sommersaison)",
+          "detalle": "Soles, surf shop  |  Mallorca, Spanien  |  Juni 2022 - Sept. 2022",
+          "bullets": [
+            "Empfang und technische Beratung der Kundschaft in der Hochsaison: Wahl des Materials je nach Niveau, Grösse und Wünschen.",
+            "Betreuung der Vermietungsabteilung: Erfassung der Verträge, Kasse und Kontrolle der Rückgaben.",
+            "Vorbereitung und Pflege des Mietmaterials: Wachsen, Zustandskontrolle, Reparaturen und Prüfung vor jedem Einsatz.",
+            "Spülen, Trocknen und Verstauen des Materials; sauberes und aufgeräumtes Geschäft, bereit für die Öffnung."
+          ]
+        },
+        {
+          "puesto": "Elektroniktechniker",
+          "detalle": "DEMEQ SRL  |  Buenos Aires, Argentinien  |  Apr. 2019 - Dez. 2019",
+          "bullets": [
+            "Montage und Justierung von Messinstrumenten nach internen Qualitätsnormen: präzise Handarbeit an technischem Material."
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "KOMPETENZEN",
+      "tipo": "lista",
+      "vinetas": false,
+      "items": [
+        "**Verkauf und Kundenbetreuung:** herzlicher und hilfsbereiter Empfang, Beratung zu Produkten und Zubehör, Verkauf, aktives Zuhören, Umgang mit Reklamationen, Service bei grossem Andrang.",
+        "**Vermietung:** Erfassung von Vermietungen und Rückgaben, Vorbereitung, Kontrolle und Pflege des Materials, Aufräumen.",
+        "**Kasse und Waren:** Bar-, Karten- und kontaktlose Zahlungen, Kassenzählung und Kassenabschluss, Annahme und Kontrolle der Waren, Nachfüllen, Bestandsführung.",
+        "**Geschäft:** Reinigung, Ordnung und Organisation der Räumlichkeiten, Öffnen und Schliessen des Betriebs.",
+        "**Persönliche Qualitäten:** Kontaktfreude, positive Einstellung, Teamarbeit, Hilfsbereitschaft, Genauigkeit, technische Neugier, Verantwortungsbewusstsein, Lernbereitschaft."
+      ]
+    },
+    {
+      "titulo": "AUSBILDUNG",
+      "tipo": "lista",
+      "vinetas": false,
+      "items": [
+        "**Ingenieurwesen für künstliche Intelligenz** - Universidad de Palermo  |  2026 - laufend",
+        "**Informationssystemtechnik** - Universidad Tecnológica Nacional (UTN)  |  2020 - 2026 (20 von 36 Fächern)",
+        "**Elektroniktechniker** - Instituto La Salette  |  2014 - 2019"
+      ]
+    },
+    {
+      "titulo": "SPRACHEN",
+      "tipo": "lista",
+      "vinetas": false,
+      "items": [
+        "Spanisch - Muttersprache  |  Englisch - Mittelstufe (B1)  |  Deutsch - Anfänger (A1)"
+      ]
+    }
+  ]
+}

@@ -2,20 +2,28 @@
   "Housekeeping": {
     "fr": "CVs/Housekeeping/CV-RamiroGuitar-FR.pdf",
     "de": "CVs/Housekeeping/CV-RamiroGuitar-DE.pdf",
-    "es": "CVs/Housekeeping/CV-RamiroGuitar-ES.pdf"
+    "es": "CVs/Housekeeping/CV-RamiroGuitar-ES.pdf",
+    "ca": "CVs/Housekeeping/CV-RamiroGuitar-CA.pdf",
+    "it": "CVs/Housekeeping/CV-RamiroGuitar-IT.pdf"
   },
   "Barman": {
-    "fr": "CVs/Barman/CV-RamiroGuitar.pdf"
+    "fr": "CVs/Barman/CV-RamiroGuitar.pdf",
+    "de": "CVs/Barman/Alemán/CV-RamiroGuitar.pdf"
   },
   "Plongeur": {
     "fr": "CVs/Plongeur/Francés/CV-RamiroGuitar.pdf",
-    "es": "CVs/Plongeur/Español/CV-RamiroGuitar.pdf"
+    "es": "CVs/Plongeur/Español/CV-RamiroGuitar.pdf",
+    "de": "CVs/Plongeur/Alemán/CV-RamiroGuitar.pdf"
   },
   "Tecnico": {
-    "fr": "CVs/Tecnico/CV-RamiroGuitar.pdf"
+    "fr": "CVs/Tecnico/CV-RamiroGuitar.pdf",
+    "de": "CVs/Tecnico/Alemán/CV-RamiroGuitar.pdf"
   },
   "Vendedor-polivalente": {
     "fr": "CVs/Vendedor-polivalente/Francés/CV-RamiroGuitar.pdf",
-    "es": "CVs/Vendedor-polivalente/Español/CV-RamiroGuitar.pdf"
+    "es": "CVs/Vendedor-polivalente/Español/CV-RamiroGuitar.pdf",
+    "ca": "CVs/Vendedor-polivalente/Catalán/CV-RamiroGuitar.pdf",
+    "it": "CVs/Vendedor-polivalente/Italiano/CV-RamiroGuitar.pdf",
+    "de": "CVs/Vendedor-polivalente/Alemán/CV-RamiroGuitar.pdf"
   }
 }

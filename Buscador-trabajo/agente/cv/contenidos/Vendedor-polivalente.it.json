@@ -1,0 +1,87 @@
+{
+  "plantilla": "especifico",
+  "puesto": "Vendedor-polivalente",
+  "idioma": "it",
+  "nombre": "RAMIRO GUITAR",
+  "titular": "Addetto vendite polivalente  |  Noleggio attrezzatura  |  Relazione con il cliente",
+  "contacto": "Telefono: +33 7 45 23 48 84  |  E-mail: ramiroguitar28@gmail.com  |  Cittadinanza europea",
+  "secciones": [
+    {
+      "titulo": "PROFILO PROFESSIONALE",
+      "tipo": "parrafo",
+      "texto": "Addetto alle vendite e al noleggio, appassionato di montagna e di sport sulla neve. Ho alle spalle una stagione completa in un negozio di noleggio attrezzatura a Maiorca: consulenza tecnica ai clienti sull’attrezzatura adatta al loro livello, gestione dei noleggi, dei resi e degli incassi, e manutenzione dell’attrezzatura in un negozio pulito e ordinato. A questo si aggiunge un anno di vendita, accoglienza e cassa in un locale molto frequentato, con ricevimento e controllo della merce, rifornimento e gestione delle scorte. Profilo cordiale, responsabile e orientato al cliente, con spirito di squadra e passione per la consulenza in negozio. Quasi tre anni come auditor informatico in EY apportano rigore, organizzazione ed esperienza con clienti esigenti."
+    },
+    {
+      "titulo": "ESPERIENZA PROFESSIONALE",
+      "tipo": "experiencia",
+      "items": [
+        {
+          "puesto": "Auditor informatico",
+          "detalle": "EY (società di consulenza internazionale)  |  Buenos Aires, Argentina  |  dic. 2023 - ago. 2026",
+          "bullets": [
+            "Lavoro con clienti esigenti (grandi aziende), con scadenze strette e grande rigore.",
+            "Coordinamento con diversi team; report di monitoraggio con Microsoft Office (Excel avanzato) e Power BI."
+          ]
+        },
+        {
+          "puesto": "Cameriere  |  Cassiere",
+          "detalle": "Cafetería Jornal  |  Buenos Aires, Argentina  |  dic. 2022 - dic. 2023",
+          "bullets": [
+            "Accoglienza, consulenza e vendita a una clientela numerosa, con cortesia, disponibilità e capacità di ascolto.",
+            "Gestione della cassa: incassi in contanti, con carta e contactless, conteggio e chiusura di cassa.",
+            "Ricevimento e controllo delle consegne: conformità degli ordini, qualità dei prodotti, rifornimento e gestione delle scorte.",
+            "Apertura e chiusura del locale: preparazione, pulizia e riordino degli spazi.",
+            "Lavoro di squadra con la cucina e il bar per rispettare i tempi di servizio nelle ore di punta."
+          ]
+        },
+        {
+          "puesto": "Accoglienza e noleggio attrezzatura (stagione estiva)",
+          "detalle": "Soles, surf shop  |  Maiorca, Spagna  |  giu. 2022 - set. 2022",
+          "bullets": [
+            "Accoglienza e consulenza tecnica alla clientela in alta stagione: scelta dell’attrezzatura in base al livello, alla taglia e alle esigenze di ciascuno.",
+            "Gestione del reparto noleggio: registrazione dei contratti, incasso e controllo dei resi.",
+            "Preparazione e manutenzione dell’attrezzatura a noleggio: applicazione della cera, controllo dello stato, riparazioni e verifica prima di ogni uscita.",
+            "Risciacquo, asciugatura e riordino dell’attrezzatura; negozio pulito e ordinato, pronto per l’apertura."
+          ]
+        },
+        {
+          "puesto": "Tecnico elettronico",
+          "detalle": "DEMEQ SRL  |  Buenos Aires, Argentina  |  apr. 2019 - dic. 2019",
+          "bullets": [
+            "Assemblaggio e taratura di strumenti di misura secondo le norme di qualità interne: lavoro manuale di precisione su materiale tecnico."
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "COMPETENZE",
+      "tipo": "lista",
+      "vinetas": false,
+      "items": [
+        "**Vendita e relazione con il cliente:** accoglienza cordiale e disponibile, consulenza su prodotti e accessori, vendita, ascolto attivo, gestione dei reclami, servizio nei periodi di grande affluenza.",
+        "**Noleggio:** registrazione dei noleggi e dei resi, preparazione, controllo e manutenzione dell’attrezzatura, riordino.",
+        "**Cassa e merce:** incassi in contanti, con carta e contactless, conteggio e chiusura di cassa, ricevimento e controllo della merce, rifornimento, gestione delle scorte.",
+        "**Negozio:** pulizia, riordino e organizzazione degli spazi, apertura e chiusura del locale.",
+        "**Qualità personali:** facilità di contatto, atteggiamento positivo, lavoro di squadra, disponibilità, rigore, curiosità tecnica, senso di responsabilità, voglia di imparare."
+      ]
+    },
+    {
+      "titulo": "FORMAZIONE",
+      "tipo": "lista",
+      "vinetas": false,
+      "items": [
+        "**Ingegneria in intelligenza artificiale** - Universidad de Palermo  |  2026 - in corso",
+        "**Ingegneria dei sistemi informativi** - Universidad Tecnológica Nacional (UTN)  |  2020 - 2026 (20 esami su 36)",
+        "**Tecnico elettronico** - Instituto La Salette  |  2014 - 2019"
+      ]
+    },
+    {
+      "titulo": "LINGUE",
+      "tipo": "lista",
+      "vinetas": false,
+      "items": [
+        "Spagnolo - madrelingua  |  Inglese - intermedio (B1)  |  Italiano - principiante (A1)"
+      ]
+    }
+  ]
+}

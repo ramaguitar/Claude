@@ -1,0 +1,96 @@
+{
+  "plantilla": "especifico",
+  "puesto": "Tecnico",
+  "idioma": "de",
+  "nombre": "RAMIRO GUITAR",
+  "titular": "Allround-Haustechniker  |  Elektrik und Elektronik  |  Unterhalt",
+  "contacto": "Telefon: +33 7 45 23 48 84  |  E-Mail: ramiroguitar28@gmail.com  |  Führerausweis Kat. B  |  EU-Staatsbürgerschaft",
+  "secciones": [
+    {
+      "titulo": "BERUFSPROFIL",
+      "tipo": "parrafo",
+      "texto": "Elektroniktechniker mit vielseitigem technischem Werdegang: Herstellung, Montage und Justierung von Messinstrumenten bei DEMEQ (Löten und Entlöten von Platinen, Austausch von Bauteilen, präzise Handarbeit); danach ein Jahr im Help Desk bei Evernex, mit Fernbehebung von Störungen, Konfiguration von Ports auf Firewall und Router sowie Administration von Unternehmenssystemen. In der Hotellerie eine Saison im Hotel Abelux auf Mallorca: Vorbereitung und Kontrolle der Zimmer, Reinigung der allgemeinen Bereiche und Meldung von Defekten und Vorfällen an die Gouvernante. Dazu kommt ein Jahr in einem stark frequentierten Betrieb, mit Öffnen und Schliessen des Betriebs und Bestandskontrolle. Fast drei Jahre als IT-Auditor bei EY runden diesen Werdegang ab: Genauigkeit, präzise Dokumentation und Nachverfolgung von Massnahmen bis zu ihrem Abschluss, bei anspruchsvollen Kunden und mit mehreren Abteilungen und Dienstleistern."
+    },
+    {
+      "titulo": "BERUFSERFAHRUNG",
+      "tipo": "experiencia",
+      "items": [
+        {
+          "puesto": "IT-Auditor",
+          "detalle": "EY (internationale Beratungsgesellschaft)  |  Buenos Aires, Argentinien  |  Dez. 2023 - Aug. 2026",
+          "bullets": [
+            "Audits der Systeme von Grossunternehmen, mit engen Fristen und Liebe zum Detail.",
+            "Word und Excel (fortgeschritten) im Alltag, um Kontrollen zu dokumentieren und Massnahmen mit mehreren Abteilungen und Dienstleistern nachzuverfolgen."
+          ]
+        },
+        {
+          "puesto": "Kellner  |  Kassierer",
+          "detalle": "Cafetería Jornal  |  Buenos Aires, Argentinien  |  Dez. 2022 - Dez. 2023",
+          "bullets": [
+            "Öffnen und Schliessen des Betriebs, Reinigung und Aufräumen der Räumlichkeiten nach Hygienenormen.",
+            "Kontrolle von Bestand und Waren, Qualitätsprüfung und Meldung des Bedarfs.",
+            "Empfang der Gäste und Teamarbeit zu Stosszeiten."
+          ]
+        },
+        {
+          "puesto": "Reinigung und Unterhalt der Zimmer",
+          "detalle": "Hotel Abelux  |  Mallorca, Spanien  |  Juni 2022 - Sept. 2022",
+          "bullets": [
+            "Erkennen und Melden von Defekten und Vorfällen in den Zimmern an die Gouvernante.",
+            "Vorbereitung und Kontrolle der Zimmer bei Abreise und Bleibe: Wäsche, Betten machen und Gästeartikel.",
+            "Reinigung der allgemeinen Bereiche (Korridore, Rezeption, Treppen) nach den Standards des Hotels.",
+            "Einsatz der Reinigungsmittel, Pflege des Materials und diskreter Kundenkontakt."
+          ]
+        },
+        {
+          "puesto": "Help Desk - Technischer Support",
+          "detalle": "Evernex  |  Buenos Aires, Argentinien  |  Mai 2021 - Mai 2022",
+          "bullets": [
+            "Fernzugriff auf IP-Server und Konfiguration der Ports auf Firewall und Router.",
+            "Administration der Unternehmenssysteme Salesforce und Finnegans.",
+            "Technischer und administrativer Support, mit Bearbeitung von Störungen und direktem Kundenkontakt."
+          ]
+        },
+        {
+          "puesto": "Elektroniktechniker",
+          "detalle": "DEMEQ SRL  |  Buenos Aires, Argentinien  |  Apr. 2019 - Dez. 2019",
+          "bullets": [
+            "Herstellung, Montage und Justierung von Messinstrumenten nach internen Qualitätsnormen.",
+            "Löten und Entlöten von Elektronikplatinen: Austausch von Bauteilen und präzise Handarbeit.",
+            "Selbstkontrolle der Arbeit bei jeder Montage, unter Einhaltung der Verfahren."
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "TECHNISCHE KOMPETENZEN",
+      "tipo": "lista",
+      "vinetas": false,
+      "items": [
+        "**Elektrik und Elektronik:** Fehlerdiagnose, Löten und Entlöten von Platinen, Austausch von Bauteilen, Messinstrumente.",
+        "**Unterhalt und Vielseitigkeit:** systematische Kontrolle von Geräten und Anlagen, kleine Reparaturen, Pflege der Werkzeuge; Unterstützung bei Sanitärinstallationen, Sanitäranlagen, Malerarbeiten und Belägen.",
+        "**Sauberkeit, Kontrolle und Bestand:** Mithilfe bei der Reinigung, Kontrolle von Zimmern und allgemeinen Bereichen, Hygienenormen, Inventur der Reinigungsmittel.",
+        "**Sicherheit:** Sicherheitsnormen, saubere und aufgeräumte Arbeitsbereiche; bereit, mich in gesetzlich vorgeschriebenen Kontrollen und Brandmeldeanlagen in öffentlich zugänglichen Betrieben weiterzubilden.",
+        "**Informatik:** Word und Excel (fortgeschritten), Salesforce, Finnegans, Power BI."
+      ]
+    },
+    {
+      "titulo": "AUSBILDUNG",
+      "tipo": "lista",
+      "vinetas": false,
+      "items": [
+        "**Elektroniktechniker** (technische Matura) - Instituto La Salette  |  2014 - 2019",
+        "**Ingenieurwesen für künstliche Intelligenz** - Universidad de Palermo  |  2026 - laufend",
+        "**Informationssystemtechnik** - Universidad Tecnológica Nacional (UTN)  |  2020 - 2026 (20 von 36 Fächern)"
+      ]
+    },
+    {
+      "titulo": "SPRACHEN",
+      "tipo": "lista",
+      "vinetas": false,
+      "items": [
+        "Spanisch - Muttersprache  |  Englisch - Mittelstufe (B1)  |  Deutsch - Anfänger (A1)"
+      ]
+    }
+  ]
+}

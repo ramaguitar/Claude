@@ -1,0 +1,87 @@
+{
+  "plantilla": "especifico",
+  "puesto": "Plongeur",
+  "idioma": "de",
+  "nombre": "RAMIRO GUITAR",
+  "titular": "Abwascher  |  Abwasch und Küchenreinigung  |  HACCP-Hygiene",
+  "contacto": "Telefon: +33 7 45 23 48 84  |  E-Mail: ramiroguitar28@gmail.com  |  EU-Staatsbürgerschaft",
+  "secciones": [
+    {
+      "titulo": "BERUFSPROFIL",
+      "tipo": "parrafo",
+      "texto": "Abwascher im Hotel Abelux auf Mallorca während einer Sommersaison: Spülen von Geschirr, Gläsern und Kochgeschirr, Bedienung der professionellen Spülmaschine, Reinigung und Desinfektion des Abwaschplatzes nach HACCP-Normen. Danach ein Jahr im Service und an der Kasse eines stark frequentierten Betriebs, wo ich mich an das Tempo der Stosszeiten, des durchgehenden Service sowie der Vorbereitung und Schliessung des Betriebs gewöhnt habe, ohne an Genauigkeit zu verlieren. Effizient, schnell, sauber und gewissenhaft, nüchtern und zuverlässig, arbeite ich gerne im Team mit Küche und Service. Meine Zeit bei EY, bei anspruchsvollen Kunden, hat mir die Freude an Genauigkeit und Detail mitgegeben."
+    },
+    {
+      "titulo": "BERUFSERFAHRUNG",
+      "tipo": "experiencia",
+      "items": [
+        {
+          "puesto": "IT-Auditor",
+          "detalle": "EY (internationale Beratungsgesellschaft)  |  Buenos Aires, Argentinien  |  Dez. 2023 - Aug. 2026",
+          "bullets": [
+            "Audits der Informationssysteme von Grossunternehmen, mit engen Fristen."
+          ]
+        },
+        {
+          "puesto": "Kellner  |  Kassierer",
+          "detalle": "Cafetería Jornal  |  Buenos Aires, Argentinien  |  Dez. 2022 - Dez. 2023",
+          "bullets": [
+            "Empfang und Bedienung der Gäste bei grossem Andrang, freundlich und aufmerksam.",
+            "Öffnen und Schliessen des Betriebs: Reinigung und Aufräumen der Räumlichkeiten nach Hygienenormen.",
+            "Annahme und Kontrolle der Waren, der Daten und der Qualität; Bestandsführung und Meldung von Engpässen.",
+            "Teamarbeit mit Küche und Bar zu Stosszeiten."
+          ]
+        },
+        {
+          "puesto": "Abwascher",
+          "detalle": "Hotel Abelux  |  Mallorca, Spanien  |  Juni 2022 - Sept. 2022",
+          "bullets": [
+            "Spülen, Abspülen und Trocknen von Geschirr, Besteck, Gläsern, Töpfen und Küchenutensilien, in der Hochsaison und im Tempo des Service.",
+            "Bedienung der professionellen Spülmaschine: Beladen, Programme, Sauberkeitskontrolle und Versorgen des Materials an seinem Platz.",
+            "Reinigung und Desinfektion des Abwaschplatzes, der Arbeitsflächen, der Böden und der Maschinen nach HACCP-Normen.",
+            "Entsorgung und Trennung der Abfälle; Nachfüllen der Reinigungsmittel und Kontrolle ihres Bestands.",
+            "Unterstützung des Küchen- und Serviceteams zu Stosszeiten, damit sauberes Geschirr immer verfügbar ist."
+          ]
+        },
+        {
+          "puesto": "Elektroniktechniker",
+          "detalle": "DEMEQ SRL  |  Buenos Aires, Argentinien  |  Apr. 2019 - Dez. 2019",
+          "bullets": [
+            "Herstellung und Montage von Messinstrumenten nach Qualitätsnormen, mit Löten und Entlöten von Elektronikplatinen."
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "KOMPETENZEN",
+      "tipo": "lista",
+      "vinetas": false,
+      "items": [
+        "**Abwasch und Geschirr:** Hand- und Maschinenabwasch, Geschirr, Gläser, Besteck, Kochgeschirr, professionelle Spülmaschine, Versorgen des Materials.",
+        "**Hygiene und Reinigung:** Reinigung und Desinfektion des Abwaschplatzes, der Arbeitsflächen und der Böden nach HACCP-Normen, Trennung und Entsorgung der Abfälle.",
+        "**Organisation des Arbeitsplatzes:** Vorbereitung vor dem Service, hohes Arbeitstempo im durchgehenden Service, ständige Sauberkeit und Ordnung, gewissenhafte Arbeit.",
+        "**Bestand:** Kontrolle der Reinigungsmittel, Annahme und Kontrolle der Waren, Meldung von Engpässen.",
+        "**Informatik:** Microsoft Office."
+      ]
+    },
+    {
+      "titulo": "AUSBILDUNG",
+      "tipo": "lista",
+      "vinetas": false,
+      "items": [
+        "**Ingenieurwesen für künstliche Intelligenz** - Universidad de Palermo  |  2026 - laufend",
+        "**Informationssystemtechnik** - Universidad Tecnológica Nacional (UTN)  |  2020 - 2026 (20 von 36 Fächern)",
+        "**Elektroniktechniker** (technische Matura) - Instituto La Salette  |  2014 - 2019"
+      ]
+    },
+    {
+      "titulo": "SPRACHEN UND QUALITÄTEN",
+      "tipo": "lista",
+      "vinetas": false,
+      "items": [
+        "**Sprachen:** Spanisch - Muttersprache  |  Englisch - Mittelstufe (B1)  |  Deutsch - Anfänger (A1)",
+        "**Qualitäten:** Effizienz, Schnelligkeit, Sauberkeit, Gewissenhaftigkeit, Nüchternheit, Zuverlässigkeit, Teamgeist, Belastbarkeit bei hohem Tempo"
+      ]
+    }
+  ]
+}

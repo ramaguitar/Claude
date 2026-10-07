@@ -1,0 +1,88 @@
+{
+  "plantilla": "especifico",
+  "puesto": "Barman",
+  "idioma": "de",
+  "nombre": "RAMIRO GUITAR",
+  "titular": "Barkeeper - Barmitarbeiter  |  Cocktails  |  Empfang und Kundenservice",
+  "contacto": "Telefon: +33 7 45 23 48 84  |  E-Mail: ramiroguitar28@gmail.com  |  EU-Staatsbürgerschaft",
+  "secciones": [
+    {
+      "titulo": "BERUFSPROFIL",
+      "tipo": "parrafo",
+      "texto": "Barkeeper an der Bar und am Pool des Hotels Abelux auf Mallorca während einer Sommersaison: Cocktails und Getränke nach Hausrezepten zubereitet, Gäste zur Karte beraten, Bar vorbereitet und Kasse geführt, einschliesslich Buchung auf die Zimmerrechnung. Danach ein Jahr im Service und an der Kasse eines stark frequentierten Betriebs, wo ich mich an das Tempo der Stosszeiten gewöhnt habe, ohne an Genauigkeit zu verlieren. Was ich an diesem Beruf mag, ist die Theke: alles bereit vor dem Service, die Gläser einwandfrei, der Gast schnell bedient und gut beraten. Organisiert, dynamisch, gepflegt im Auftreten und sicher im Umgang mit internationaler Kundschaft, arbeite ich gerne im Team. Meine Zeit bei EY, bei anspruchsvollen Kunden, hat mir die Freude an Genauigkeit und Detail mitgegeben."
+    },
+    {
+      "titulo": "BERUFSERFAHRUNG",
+      "tipo": "experiencia",
+      "items": [
+        {
+          "puesto": "IT-Auditor",
+          "detalle": "EY (internationale Beratungsgesellschaft)  |  Buenos Aires, Argentinien  |  Dez. 2023 - Aug. 2026",
+          "bullets": [
+            "Audits der Informationssysteme von Grossunternehmen, mit engen Fristen."
+          ]
+        },
+        {
+          "puesto": "Kellner  |  Kassierer",
+          "detalle": "Cafetería Jornal  |  Buenos Aires, Argentinien  |  Dez. 2022 - Dez. 2023",
+          "bullets": [
+            "Empfang und Bedienung der Gäste bei grossem Andrang, freundlich und aufmerksam.",
+            "Kassenführung: Bar-, Karten- und kontaktlose Zahlungen, Kassenzählung und Kassenabschluss.",
+            "Annahme und Kontrolle der Waren, der Daten und der Qualität; Bestandsführung und Meldung von Engpässen.",
+            "Teamarbeit mit Küche und Bar zu Stosszeiten."
+          ]
+        },
+        {
+          "puesto": "Barkeeper",
+          "detalle": "Hotel Abelux  |  Mallorca, Spanien  |  Juni 2022 - Sept. 2022",
+          "bullets": [
+            "Zubereitung klassischer Cocktails, Longdrinks, Kaffees und alkoholfreier Getränke nach Hausrezepten.",
+            "Service an der Hotelbar und am Pool in der Hochsaison; Beratung der Gäste zur Getränkekarte, mit Empfehlungen, in mehreren Sprachen.",
+            "Vorbereitung der Bar: Eis, Garnituren, Gläser und Utensilien.",
+            "Bestandskontrolle, Warenannahme und FIFO-Rotation.",
+            "Kassieren und Buchung auf die Zimmerrechnung; Kassenabschluss am Ende des Service.",
+            "Reinigung und Hygiene von Theke, Gläsern und Maschinen nach HACCP-Normen."
+          ]
+        },
+        {
+          "puesto": "Elektroniktechniker",
+          "detalle": "DEMEQ SRL  |  Buenos Aires, Argentinien  |  Apr. 2019 - Dez. 2019",
+          "bullets": [
+            "Herstellung und Montage von Messinstrumenten nach Qualitätsnormen, mit Löten und Entlöten von Elektronikplatinen."
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "KOMPETENZEN",
+      "tipo": "lista",
+      "vinetas": false,
+      "items": [
+        "**Bar und Cocktails:** klassische Cocktails, Longdrinks, alkoholfreie Getränke, Kaffees, Hausrezepte, Beratung zur Karte, einwandfreier Service von Getränken und Speisen.",
+        "**Vorbereitung und Hygiene:** Vorbereitung der Bar vor dem Service (Eis, Garnituren, Gläser), Reinigung von Theke und Gläsern nach HACCP-Normen, verantwortungsvoller Alkoholausschank.",
+        "**Bestand und Inventur:** Bestandskontrolle, Warenannahme, FIFO-Rotation, Lagerung von Produkten und Material, Inventuren und Nachbestellungen.",
+        "**Kasse und Abrechnung:** Bar-, Karten- und kontaktlose Zahlungen, Buchung auf die Zimmerrechnung, Kassenabschluss am Ende des Service.",
+        "**Kundenbetreuung:** professioneller Empfang und Beratung, Nachverfolgung der Zufriedenheit, Umgang mit Reklamationen, internationale Kundschaft. **Informatik:** Microsoft Office."
+      ]
+    },
+    {
+      "titulo": "AUSBILDUNG",
+      "tipo": "lista",
+      "vinetas": false,
+      "items": [
+        "**Ingenieurwesen für künstliche Intelligenz** - Universidad de Palermo  |  2026 - laufend",
+        "**Informationssystemtechnik** - Universidad Tecnológica Nacional (UTN)  |  2020 - 2026 (20 von 36 Fächern)",
+        "**Elektroniktechniker** (technische Matura) - Instituto La Salette  |  2014 - 2019"
+      ]
+    },
+    {
+      "titulo": "SPRACHEN UND QUALITÄTEN",
+      "tipo": "lista",
+      "vinetas": false,
+      "items": [
+        "**Sprachen:** Spanisch - Muttersprache  |  Englisch - Mittelstufe (B1)  |  Deutsch - Anfänger (A1)",
+        "**Qualitäten:** Organisation, Priorisierung, Kontaktfreude, gepflegtes Auftreten, Dynamik, Motivation, Teamgeist"
+      ]
+    }
+  ]
+}
