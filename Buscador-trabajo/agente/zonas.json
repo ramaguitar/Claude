@@ -1,6 +1,6 @@
 [
-  {"nombre": "Val Thorens", "pais": "Francia", "idioma": "fr", "estado": "en_curso"},
-  {"nombre": "Courchevel", "pais": "Francia", "idioma": "fr", "estado": "pendiente"},
+  {"nombre": "Val Thorens", "pais": "Francia", "idioma": "fr", "estado": "cubierta"},
+  {"nombre": "Courchevel", "pais": "Francia", "idioma": "fr", "estado": "en_curso"},
   {"nombre": "Méribel", "pais": "Francia", "idioma": "fr", "estado": "pendiente"},
   {"nombre": "Les Menuires", "pais": "Francia", "idioma": "fr", "estado": "pendiente"},
   {"nombre": "Val d'Isère", "pais": "Francia", "idioma": "fr", "estado": "pendiente"},
@@ -19,7 +19,7 @@
   {"nombre": "Serre Chevalier", "pais": "Francia", "idioma": "fr", "estado": "pendiente"},
   {"nombre": "Valloire", "pais": "Francia", "idioma": "fr", "estado": "pendiente"},
   {"nombre": "Verbier", "pais": "Suiza", "idioma": "fr", "estado": "pendiente"},
-  {"nombre": "Crans-Montana", "pais": "Suiza", "idioma": "fr", "estado": "pendiente"},
+  {"nombre": "Crans-Montana", "pais": "Suiza", "idioma": "fr", "estado": "en_curso"},
   {"nombre": "Nendaz", "pais": "Suiza", "idioma": "fr", "estado": "pendiente"},
   {"nombre": "Villars-sur-Ollon", "pais": "Suiza", "idioma": "fr", "estado": "pendiente"},
   {"nombre": "Champéry", "pais": "Suiza", "idioma": "fr", "estado": "pendiente"},

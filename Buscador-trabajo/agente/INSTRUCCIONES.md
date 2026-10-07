@@ -64,6 +64,9 @@ Puesto según la vacante encontrada:
 - **Tecnico:** maintenance, technicien, électricien, remontées mécaniques, Haustechnik, opérateur, manutenzione.
 - **Vendedor-polivalente:** vendeur, hôte de vente, employé polyvalent, caissier, location de skis, Verkauf,
   Vermietung, commesso, noleggio.
+- **Tiendas de esquí o de alquiler de material** (Intersport, Sport 2000, Skiset, Skimium, ski shops):
+  **Vendedor-polivalente** aunque no haya vacante publicada, con el texto de `plantillas/fr-tienda.md`
+  (decisión de Ramiro del 2026-10-07).
 - **Housekeeping**, en cualquier otro caso: housekeeping, femme/valet de chambre, service, réception o candidatura espontánea.
 
 El idioma del CV es el de la **zona**, aunque el mail vaya en inglés.
@@ -93,7 +96,9 @@ Buscá la ruta en `cvs.json[puesto][idioma]`. Si no existe, traducilo (paso 6).
 7. En el mail correspondiente del lote poné `"cv_nuevo": true`.
 
 ## 7. Redactar
-- Partí de `plantillas/<idioma>.md` con el idioma de la zona. Usá `plantillas/en.md` solo si la web del
+- Para tiendas de esquí o alquiler partí de `plantillas/fr-tienda.md`; en otros idiomas, traducí esa misma
+  estructura y esos mismos hechos (alquiler en el surf shop Soles y venta/caja en Buenos Aires).
+- Para el resto, partí de `plantillas/<idioma>.md` con el idioma de la zona. Usá `plantillas/en.md` solo si la web del
   lugar está únicamente en inglés.
 - Reemplazá **todos** los marcadores (`{GANCHO}`, `{LUGAR}`, `{ZONA}`, `{TAREAS}`, `{PERMISO}`, `{PUESTO}`)
   según las tablas de la plantilla.
